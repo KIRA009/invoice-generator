@@ -1,0 +1,33 @@
+.addIteminput {
+    display: initial;
+    margin: 0;
+}
+
+.itemListTableBody {
+    tr {
+        td {
+            text-align: right;
+        }
+
+        .description {
+            text-align: left;
+        }
+    }
+}
+
+.amount {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+    text-align: left;
+}
+
+.delIcon {
+    margin-left: auto;
+}
+
+.bottomText {
+    text-align: right;
+    margin: 10px 0;
+}
