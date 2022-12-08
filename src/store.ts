@@ -14,7 +14,7 @@ const middleware: Middleware[] = [thunkMiddlware];
 
 const excludeLoggerEnvs = ['test', 'production'];
 const shouldIncludeLogger = !excludeLoggerEnvs.includes(
-    process.env.NODE_ENV || ''
+    import.meta.env.NODE_ENV || ''
 );
 
 if (shouldIncludeLogger) {

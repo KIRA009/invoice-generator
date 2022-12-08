@@ -29,7 +29,7 @@ export const InvoicePage = ({ invoice, customer }: Props) => {
                 <View style={compose('flex')}>
                     <View style={compose('50')}>
                         <Text style={compose('bold fs-medium')}>
-                            {process.env.REACT_APP_USER_NAME}
+                            {import.meta.env.VITE_USER_NAME}
                         </Text>
                         <Text style={compose('fs-small')}>Assam</Text>
                         <Text style={compose('fs-small')}>India</Text>
@@ -169,11 +169,11 @@ export const InvoicePage = ({ invoice, customer }: Props) => {
                 </View>
                 <View style={compose('mt-large')}>
                     <Image
-                        src={process.env.REACT_APP_SIG_URL}
+                        src={import.meta.env.VITE_SIG_URL}
                         style={compose('image w-35')}
                     />
                     <Text style={compose('mt-small fs-small')}>
-                        {process.env.REACT_APP_USER_NAME}
+                        {import.meta.env.VITE_USER_NAME}
                     </Text>
                     <Text style={compose('fs-small')}>
                         Authorized Signature
