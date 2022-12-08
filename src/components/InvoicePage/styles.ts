@@ -1,19 +1,22 @@
-import { CSSClasses } from '../../types/cssClasses'
-import { Font } from '@react-pdf/renderer'
+import { CSSClasses } from '../../types/cssClasses';
+import { Font } from '@react-pdf/renderer';
 
 Font.register({
     family: 'Nunito',
     fonts: [
-        { src: 'https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf' },
-        { src: 'https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUYevN.ttf', fontWeight: 600 },
+        {
+            src: 'https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf',
+        },
+        {
+            src: 'https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUYevN.ttf',
+            fontWeight: 600,
+        },
     ],
-})
-Font.registerHyphenationCallback(word => (
-    [word]
-));
+});
+Font.registerHyphenationCallback((word) => [word]);
 
-const colorGray = '#666'
-const colorLightGray = '#e3e3e3'
+const colorGray = '#666';
+const colorLightGray = '#e3e3e3';
 
 const styles: CSSClasses = {
     invoice_wrapper: {
@@ -39,10 +42,10 @@ const styles: CSSClasses = {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
     },
     'align-center': {
-        alignItems: 'center'
+        alignItems: 'center',
     },
     left: {
         textAlign: 'left',
@@ -51,13 +54,13 @@ const styles: CSSClasses = {
         textAlign: 'right',
     },
     'mt-small': {
-        marginTop: '10px'
+        marginTop: '10px',
     },
     'mt-med': {
-        marginTop: '15px'
+        marginTop: '15px',
     },
     'mt-large': {
-        marginTop: '20px'
+        marginTop: '20px',
     },
     35: {
         width: '35%',
@@ -66,14 +69,14 @@ const styles: CSSClasses = {
         width: '50%',
     },
     bg: {
-        backgroundColor: "red"
+        backgroundColor: 'red',
     },
     bgr: {
-        backgroundColor: "green"
+        backgroundColor: 'green',
     },
     'bg-gray': {
         backgroundColor: colorGray,
-        color: 'white'
+        color: 'white',
     },
     'bg-light-gray': {
         backgroundColor: colorLightGray,
@@ -103,19 +106,19 @@ const styles: CSSClasses = {
         padding: '4px 8px',
     },
     'fl-small': {
-        flex: 1
+        flex: 1,
     },
     'fl-med': {
-        flex: 2
+        flex: 2,
     },
     'fl-large': {
-        flex: 6
+        flex: 6,
     },
     image: {
         position: 'relative',
         display: 'block',
-        height: '50px'
+        height: '50px',
     },
-}
+};
 
-export default styles
+export default styles;

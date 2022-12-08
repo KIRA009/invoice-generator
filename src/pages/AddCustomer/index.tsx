@@ -1,7 +1,5 @@
-import { Customer, States } from "../../components/Customer";
+import { Customer, States } from '../../components/Customer';
 
 export const AddCustomer = () => {
-	return (
-		<Customer state={States.Add} />
-	);
+    return <Customer state={States.Add} />;
 };
