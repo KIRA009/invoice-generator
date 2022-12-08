@@ -27,7 +27,7 @@
     "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "lint": "npx eslint src",
+    "lint": "eslint src",
     "lint:fix": "yarn lint --fix",
     "prettier": "prettier --check src",
     "prettier:fix": "yarn prettier --write",

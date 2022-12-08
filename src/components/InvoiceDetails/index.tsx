@@ -67,7 +67,7 @@ export const InvoiceDetails = ({ invoice, customer }: Props) => {
                         Download
                     </PDFDownloadLink>
                 ) : (
-                    <Link to='#' onClick={(e) => setShowDownloadLink(true)}>
+                    <Link to='#' onClick={(_) => setShowDownloadLink(true)}>
                         <Text>Show download link</Text>
                     </Link>
                 )}

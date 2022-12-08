@@ -52,19 +52,19 @@ export const ItemList = ({ items, setItems }: Props) => {
         if (itemAmountRef.current) itemAmountRef.current.value = '';
 
         setItems((prev) => {
-            let newItems = [...prev];
+            const newItems = [...prev];
             newItems.push(itemDetails);
             return newItems;
         });
     };
     const removeItem = (e: MouseEvent<HTMLButtonElement>, index: number) => {
         setItems((prev) => {
-            let newItems = [...prev];
+            const newItems = [...prev];
             newItems.splice(index, 1);
             return newItems;
         });
     };
-    const onRateQuantityChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const onRateQuantityChange = (_: ChangeEvent<HTMLInputElement>) => {
         if (
             !itemQuantityRef.current ||
             !itemRateRef.current ||
